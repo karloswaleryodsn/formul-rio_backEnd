@@ -1,18 +1,17 @@
 const express = require("express");
 const uuid = require("uuid");
 const cors = require("cors");
-const port = process.env.PORT || 3001; // ✅ usa a porta do Railway automaticamente
+const port = process.env.PORT || 3001;
 
 const app = express();
 app.use(express.json());
-app.use(cors());
 
-const Verificarurl = (request, response, next) => {
-  console.log(request.url, request.method, new Date());
-  next();
-};
+// ✅ CORS configurado com o link do seu Vercel
+app.use(cors({
+  origin: "https://formul-rio-full-stack.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+}));
 
-app.use(Verificarurl);
 
 const users = [];
 
