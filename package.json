@@ -1,0 +1,23 @@
+{
+  "name": "first_project",
+  "version": "1.0.0",
+  "description": "Meu primeiro projeto Node",
+  "license": "ISC",
+  "author": "karlos",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "expres": "^0.0.5",
+    "express": "^5.2.1",
+    "i": "^0.3.7",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
