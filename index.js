@@ -7,11 +7,7 @@ const app = express();
 app.use(express.json());
 
 // ✅ CORS configurado com o link do seu Vercel
-app.use(cors({
-  origin: "https://formul-rio-full-stack.vercel.app",
-  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
-}));
-
+app.use(cors());
 
 const users = [];
 
