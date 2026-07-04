@@ -7,15 +7,12 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
     "start": "node index.js"
   },
   "dependencies": {
     "cors": "^2.8.6",
-    "expres": "^0.0.5",
     "express": "^5.2.1",
-    "i": "^0.3.7",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
